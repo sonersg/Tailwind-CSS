@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kumbh+Sans:wght@300;400&family=Pacifico&family=Rubik+Gemstones&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+html {
+  min-height: 100vh;
+  background-color: #242424;
+  color: whitesmoke;
+  background-image: url("https://picsum.photos/720/1480");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  html {
+    background-image: url("https://picsum.photos/1366/768");
+  }
+}
+
+#root {
+  max-width: 768px;
+  padding: 1em 1.7em;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Dancing Script";
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.7rem;
+  margin-bottom: 0.7rem;
+  background: radial-gradient(gray, black);
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.d-flex p {
+  word-break: break-all;
+}
+.d-flex__margin {
+  margin: 1rem;
+}
+
+.question {
+  padding: 0.7rem;
+  background-color: #1a1a1a;
+  color: whitesmoke;
+  border-radius: 0.7rem;
+}
+.answers-buttons {
+  margin-bottom: 1rem;
+}
+.answers-buttons button {
+  width: 100%;
+}
+
+button {
+  border-radius: 0.7rem;
+  border: 3px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover,
+button:active,
+button:focus,
+button:focus-visible {
+  background-color: gray;
+}
+
+.start-btn {
+  border-radius: 1.2rem;
+  padding: 0.6em 1.5em;
+}
+
+.difficulty-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.difficulty-button {
+  border-radius: 0;
+}
+.difficulty-button:nth-child(1) {
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+.difficulty-button:nth-child(3) {
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
